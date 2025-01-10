@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Delicake</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body class="cakes">
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid top-bar bg-dark text-light px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row gx-0 align-items-center d-none d-lg-flex">
+            <div class="col-lg-6 px-5 text-start"></div>
+            <div class="col-lg-6 px-5 text-end">
+                <small>Follow us:</small>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn-lg-square text-primary border-end rounded-0 social-instagram" href="" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="btn-lg-square text-primary  rounded-0 social-facebook" href="" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <!-- <a class="btn-lg-square text-primary pe-0 social-twitter" href="" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+   <!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+    <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+        <h1 id="website-name2" class="text-primary m-0">Loading...</h1>
+    </a>
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav mx-auto p-4 p-lg-0">
+            <a href="index.html" class="nav-item nav-link">Home</a>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="products-dropdown">Products</a>
+                <div class="dropdown-menu m-0" id="products-menu">
+                    <!-- Categories will be populated here -->
+                </div>
+            </div>
+            <a href="index.html#about" class="nav-item nav-link">About</a>
+            <a href="index.html#service" class="nav-item nav-link">Services</a>
+            
+            <a href="index.html#contact" class="nav-item nav-link">Contact</a>
+            <a href="Gallery.html" class="nav-item nav-link">Gallery</a>
+        </div>
+        <a href="tel:+01234567890" class="d-flex align-items-center text-decoration-none">
+            <div class="flex-shrink-0 btn-lg-square border border-light rounded-circle">
+                <i class="fa fa-phone text-primary"></i>
+            </div>
+            <div class="ps-3">
+                <small class="text-primary mb-0">Call Us</small>
+                <p id="contact-phone" class="text-light fs-5 mb-0">Loading...</p>
+            </div>
+        </a>
+        <a href="#" class="d-flex align-items-center text-decoration-none" id="location-link" target="_blank">
+            <div class="flex-shrink-0 btn-lg-square border border-light rounded-circle">
+                <i class="fa fa-map-marker-alt text-primary"></i>
+            </div>
+            <div class="ps-3">
+                <small class="text-primary mb-0">Our Location</small>
+                <p id="contact-location" class="text-light fs-5 mb-0">Loading...</p>
+            </div>
+        </a>
+
+    </div>
+</nav>
+<!-- Navbar End -->
+
+
+    <!-- Navbar End -->
+
+    <style>
+        
+        /* Make sure the navbar remains dark */
+.navbar {
+    background-color: #000 !important;
+    box-shadow: 0px 0px 1px 10px red;
+}
+
+/* Optional: If you want to add a shadow effect when scrolling */
+.navbar.fixed-top {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+ 
+}
+
+        @import url("https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap");
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	background: #fafafa;
+	font-family: "Reem Kufi", sans-serif;
+	letter-spacing: 0.2px;
+	height: 100vh;
+	width: 100vw;
+	background-color: var(--bg-1);
+	position: relative;
+	scroll-behavior: smooth;
+}
+
+:root {
+	--col-1: #c8ddef;
+	--col-2: #ff3729fc;
+	--bg-1: white;
+}
+
+.material-symbols-rounded {
+	font-family: "Material Symbols Rounded";
+	font-weight: normal;
+	font-style: normal;
+	font-size: 18px;
+	/* Preferred icon size */
+	display: inline-block;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+
+	vertical-align: middle;
+	/* Support for all WebKit browsers. */
+	-webkit-font-smoothing: antialiased;
+	/* Support for Safari and Chrome. */
+	text-rendering: optimizeLegibility;
+
+	/* Support for Firefox. */
+	-moz-osx-font-smoothing: grayscale;
+
+	/* Support for IE. */
+	font-feature-settings: "liga";
+}
+
+section {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 2em;
+}
+
+.gallery {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.gallery .row {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.gallery .row .col {
+	max-width: 24.999%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.gallery .row .col .fluid-container {
+	width: 99.9999%;
+	float: left;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: 15px 0;
+	user-select: none;
+	transition: all 0.2s ease;
+	display: block;
+}
+
+.gallery .row .col .fluid-container {
+	display: block;
+}
+
+.gallery .row .col .fluid-container.selected {
+	width: 99.99%;
+	max-width: 49.99%;
+}
+
+@media screen and (max-width: 767px) {
+	.gallery .row .col .fluid-container {
+		width: 99.99%;
+	}
+
+	.gallery .row .col {
+		max-width: 49.999%;
+	}
+}
+
+.gallery .row .col .fluid-container .item {
+	border-radius: 16px;
+	overflow: hidden;
+	cursor: zoom-in;
+	opacity: 0;
+	transition: all 0.4s ease-in-out;
+}
+
+.gallery .row .col .fluid-container.inScreen .item {
+	opacity: 1;
+}
+
+.gallery .row .col .fluid-container .item .img img {
+	border-radius: 16px;
+	width: 100%;
+	transition: transform 0.2s ease-in-out;
+}
+
+.gallery .row .col .fluid-container .item .img {
+	border-radius: 16px;
+	position: relative;
+	overflow: hidden;
+}
+
+.gallery .row .col .fluid-container .item .img:hover img {
+	transform: scale(1.2);
+}
+
+.gallery .row .col .fluid-container .item .img:before {
+	content: " ";
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(57, 57, 57, 0.385);
+	color: #fafafa;
+	font-size: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.2s ease-in-out;
+	z-index: 1;
+}
+
+.gallery .row .col .fluid-container .item .img:hover:before {
+	opacity: 1;
+}
+
+.gallery .row .col .fluid-container .item .info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.2em;
+	box-sizing: border-box;
+	transform: scale(0.9);
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
+}
+
+.gallery .row .col .fluid-container .item:hover .info {
+	transform: scale(1);
+	opacity: 1;
+}
+
+.gallery .row .col .fluid-container .item .info .title {
+	flex: 1;
+	text-align: center;
+}
+
+.overlayed {
+	overflow: hidden !important;
+}
+
+.overlay {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 999;
+	background-color: rgba(38, 38, 38, 0.544);
+	display: none;
+}
+
+.overlayed .overlay {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation: fadeIn 0.3s ease-in-out;
+}
+
+.overlay .viewer {
+	box-sizing: border-box;
+	user-select: none;
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+	flex-direction: column;
+	padding: 60px;
+}
+
+.overlay .viewer div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.overlay .viewer div:first-child {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.overlay .viewer img {
+	max-height: 80vh;
+	max-width: 80vw;
+	border-radius: 8px;
+}
+
+.alt {
+	flex: 1;
+	color: white;
+}
+
+.close {
+	float: right;
+	right: 0;
+	border: none;
+	height: 44px;
+	aspect-ratio: 1;
+	border-radius: 100%;
+	margin: 10px;
+	transition: all 0.3s ease;
+}
+
+.close:hover {
+	background-color: #fafafa;
+	transform: scale(1.1);
+}
+/* Overlay styles */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none; /* Initially hidden */
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.viewer {
+    position: relative;
+    text-align: center;
+}
+
+.viewer img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.viewer .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+    </style>
+
+
+<section class="gallery" id="gallery">
+    <div class="row" id="row"></div>
+</section>
+
+<!-- Overlay and viewer for enlarged images -->
+<div class="overlay" id="overlay" style="display: none;">
+    <div class="viewer">
+        <div>
+            <div class="alt">this image is ...</div>
+            <button class="close" id="close-btn"><span class="material-symbols-rounded">close</span></button>
+        </div>
+        <div><img id="overlay-img" src="" alt=""></div>
+    </div>
+</div>
+
+<script>
+// Function to fetch and render the images
+async function loadGallery() {
+    const productsData = await fetch('products.json').then(response => response.json());
+    const data = await fetch('data.json').then(response => response.json());
+
+    const row = document.getElementById('row');
+
+    // Loop through the categories
+    productsData.categories.forEach(category => {
+        const col = document.createElement('div');
+        col.classList.add('col');
+
+        // Loop through the products in the category
+        category.categoryProducts.forEach(product => {
+            const fluidContainer = document.createElement('div');
+            fluidContainer.classList.add('fluid-container');
+
+            const item = document.createElement('div');
+            item.classList.add('item');
+
+            const imgDiv = document.createElement('div');
+            imgDiv.classList.add('img');
+            
+            const img = document.createElement('img');
+            img.src = product.images[0];  // Use the first image from the product
+            img.alt = product.name; // Set alt text to the product name
+            img.addEventListener('click', function() {
+                openOverlay(img.src);  // Open the overlay with the clicked image
+            });
+
+            const infoDiv = document.createElement('div');
+            infoDiv.classList.add('info');
+            
+            const titleSpan = document.createElement('span');
+            titleSpan.classList.add('title');
+            titleSpan.textContent = product.name;
+
+            imgDiv.appendChild(img);
+            infoDiv.appendChild(titleSpan);
+            item.appendChild(imgDiv);
+            item.appendChild(infoDiv);
+            fluidContainer.appendChild(item);
+            col.appendChild(fluidContainer);
+        });
+
+        row.appendChild(col);
+    });
+}
+
+// Function to open the overlay with the clicked image
+function openOverlay(imageSrc) {
+    const overlay = document.getElementById('overlay');
+    const overlayImg = document.getElementById('overlay-img');
+    overlayImg.src = imageSrc;  // Set the image source for the overlay
+    overlay.style.display = 'block';  // Show the overlay
+}
+
+// Close button functionality to hide the overlay
+document.getElementById('close-btn').addEventListener('click', function() {
+    const overlay = document.getElementById('overlay');
+    overlay.style.display = 'none';  // Hide the overlay
+});
+
+// Load the gallery on page load
+window.onload = loadGallery;
+</script>
+
+
+    <script>
+        let items = document.querySelectorAll(".item"),
+	viewer = document.querySelector(".viewer img");
+document.querySelector(".viewer .close").onclick = () => {
+	document.querySelector("body").classList.toggle("overlayed");
+};
+items.forEach((item) => {
+	item.onclick = () => {
+		let content = item.querySelector(".img img");
+		viewer.setAttribute("src", content.getAttribute("src"));
+		document.querySelector(".viewer .alt").innerHTML = item.querySelector(
+			".title"
+		).innerHTML;
+		document.querySelector("body").classList.toggle("overlayed");
+	};
+});
+
+["load", "scroll"].forEach((eventName) => {
+	window.addEventListener(eventName, (event) => {
+		document.querySelectorAll(".fluid-container").forEach((item) => {
+			if (isScrolledIntoView(item)) {
+				item.classList.add("inScreen");
+			} else {
+				item.classList.remove("inScreen");
+			}
+		});
+	});
+});
+function isScrolledIntoView(el) {
+	let rect = el.getBoundingClientRect();
+	let elemTop = rect.top;
+	let elemBottom = rect.bottom;
+	let isVisible = elemTop >= -300 && elemBottom <= screen.height + 300;
+	return isVisible;
+}
+
+    </script>
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer my-6 mb-0 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5 justify-content-center">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Bakery Address</h4>
+                    <p class="mb-2">
+                        <i class="fa fa-map-marker-alt me-3"></i><span class="office-address">Loading address...</span>
+                    </p>
+                    <p class="mb-2">
+                        <i class="fa fa-phone-alt me-3"></i><span class="office-phone">Loading phone...</span>
+                    </p>
+                    <p class="mb-2">
+                        <i class="fa fa-envelope me-3"></i><span class="office-email">Loading email...</span>
+                    </p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-light rounded-circle me-1 social-twitter" href=""><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-1 social-facebook" href=""><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-1 social-youtube" href=""><i
+                                class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-0 social-linkedin" href=""><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="index.html#about">About Us</a>
+                    <a class="btn btn-link" href="index.html#contact">Contact Us</a>
+                    <a class="btn btn-link" href="index.html#services">Our Services</a>
+                    <a href="Gallery.html" class="btn btn-link">Gallery</a>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Photo Gallery</h4>
+                    <div class="row g-2 photo-gallery">
+                        <!-- Images will be dynamically loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright text-light py-4 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a href="#" id="website-name">Loading...</a> , All Right
+                    Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    Designed By <span id="developer-name">Loading...</span>
+                    <a href="" id="developer-linkedin" class="btn btn-link">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+
+
+
+
+
+
+
+
+    
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+   
+    <script src="data.js"></script>
+    <!-- Custom JavaScript to load products -->
+    <style>
+        /* Floating Button Styles */
+        .floating-button {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            text-align: center;
+            z-index: 1000;
+            font-size: 14px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+        }
+        
+        .floating-button i {
+            font-size: 28px;
+            margin-bottom: 5px;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+        
+        .floating-button p {
+            font-size: 13px;
+            margin: 0;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+        
+        .floating-button:hover {
+            transform: translateY(-50%) scale(1.15);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(135deg, #0056b3, #003d7a);
+        }
+        
+        .floating-button:hover i {
+            transform: scale(1.2);
+            color: #d4e9ff;
+        }
+        
+        .floating-button:hover p {
+            color: #d4e9ff;
+        }
+        
+        /* Modal Content */
+        .modal-content {
+            position: relative;
+            background: transparent; /* Transparent to focus on the image */
+            padding: 0;
+            border: none;
+            max-width: 100%; /* Allow full width on smaller screens */
+            max-height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        
+        /* Modal Image */
+        .modal-image {
+            height: 100vh; /* Full viewport height */
+            width: auto; /* Maintain aspect ratio */
+            display: block;
+            margin: 0 auto;
+        }
+        
+        /* Close Button Attached to Image */
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            color: #fff;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 3000;
+            transition: background 0.3s ease;
+        }
+        
+        .close-button:hover {
+            background: rgba(0, 0, 0, 0.9);
+        }
+        
+        /* Menu Modal Background *//* Menu Modal Background */
+        .menu-modal {
+           
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7); /* Dimmed background */
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+        
+        /* Modal Content */
+        .modal-content {
+            width: max-content;
+           
+            position: relative;
+            display: inline-block;
+        }
+        
+        /* Close Button */
+        .close-button {
+            position: fixed;
+        
+            background: transparent;
+            border: none;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+        }
+        .close-button:hover {
+            
+            background-color: red;
+        }
+        /* Image */
+        .modal-image {
+            width: 100%;
+            height: auto;
+            max-width: 600px; /* Adjust as needed */
+        }
+        
+        /* Responsive Adjustments for Smaller Screens */
+        @media (max-width: 768px) {
+            .modal-image {
+                height: auto; /* Auto height for smaller screens */
+                width: 100%; /* Full width */
+            }
+        
+            .close-button {
+                top: 5px;
+                right: 5px;
+                width: 30px;
+                height: 30px;
+                font-size: 16px;
+            }
+        }
+        
+        
+        
+        
+            </style>
+        
+        <!-- Floating Button -->
+        <div class="floating-button" id="menuButton">
+            <p>Menu</p>
+        </div>
+        
+        <!-- Menu Modal -->
+        <div class="menu-modal" id="menuModal">
+            <div class="modal-content">
+                <button class="close-button" id="closeMenuModal">&times;</button>
+                <img src="img/profile/menu.jpg" alt="MENU" class="modal-image" />
+            </div>
+        </div>
+        
+        
+        
+        <script>
+            // Get references to elements
+        const menuButton = document.getElementById("menuButton");
+        const menuModal = document.getElementById("menuModal");
+        const closeMenuModal = document.getElementById("closeMenuModal");
+        
+        // Show modal when menu button is clicked
+        menuButton.addEventListener("click", () => {
+            menuModal.style.display = "flex"; // Show the modal
+        });
+        
+        // Close modal when the close button is clicked
+        closeMenuModal.addEventListener("click", () => {
+            menuModal.style.display = "none"; // Hide the modal
+        });
+        
+        // Close modal when clicking outside the image
+        menuModal.addEventListener("click", (e) => {
+            // Ensure the click is outside the modal-content and not on the image
+            if (e.target === menuModal) {
+                menuModal.style.display = "none"; // Hide the modal
+            }
+        });
+        
+        
+            </script>
+</body>
+
+
+</html>

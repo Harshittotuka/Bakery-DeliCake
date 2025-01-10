@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Delicake</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid top-bar bg-dark text-light px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row gx-0 align-items-center d-none d-lg-flex">
+            <div class="col-lg-6 px-5 text-start"></div>
+            <div class="col-lg-6 px-5 text-end">
+                <small>Follow us:</small>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn-lg-square text-primary border-end rounded-0 social-instagram" href="" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="btn-lg-square text-primary  rounded-0 social-facebook" href="" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <!-- <a class="btn-lg-square text-primary pe-0 social-twitter" href="" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+            <h1 id="website-name2" class="text-primary m-0">Loading...</h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav mx-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                        id="products-dropdown">Products</a>
+                    <div class="dropdown-menu m-0" id="products-menu">
+                        <!-- Categories will be populated here -->
+                    </div>
+                </div>
+                <a href="index.html#about" class="nav-item nav-link">About</a>
+                <a href="index.html#service" class="nav-item nav-link">Services</a>
+                <a href="index.html#contact" class="nav-item nav-link">Contact</a>
+                <a href="Gallery.html" class="nav-item nav-link" target="_blank">Gallery</a>
+            </div>
+            <a href="tel:+01234567890" class="d-flex align-items-center text-decoration-none">
+                <div class="flex-shrink-0 btn-lg-square border border-light rounded-circle">
+                    <i class="fa fa-phone text-primary"></i>
+                </div>
+                <div class="ps-3">
+                    <small class="text-primary mb-0">Call Us</small>
+                    <p id="contact-phone" class="text-light fs-5 mb-0">Loading...</p>
+                </div>
+            </a>
+
+            <a href="#" class="d-flex align-items-center text-decoration-none" id="location-link" target="_blank">
+                <div class="flex-shrink-0 btn-lg-square border border-light rounded-circle">
+                    <i class="fa fa-map-marker-alt text-primary"></i>
+                </div>
+                <div class="ps-3">
+                    <small class="text-primary mb-0">Our Location</small>
+                    <p id="contact-location" class="text-light fs-5 mb-0">Loading...</p>
+                </div>
+            </a>
+
+        </div>
+    </nav>
+
+   
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 pb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="owl-carousel header-carousel position-relative">
+            <!-- First Slide: About Bakery -->
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/bakery.jpg" alt="Delicious Cakes">
+                <div class="owl-carousel-inner">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-lg-8">
+                                <p class="text-primary text-uppercase fw-bold mb-2">// Welcome to Our Bakery</p>
+                                <h1 class="display-1 text-light mb-4 animated slideInDown">A World of Freshly Baked
+                                    Goods</h1>
+                                <p class="text-light fs-5 mb-4 pb-3">Our bakery offers a wide range of freshly baked
+                                    goods, from rich cakes to warm muffins, all made with care and the finest
+                                    ingredients.</p>
+                                <a href="index.html#menu" class="btn btn-primary rounded-pill py-3 px-5">View Our Products</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Slide: About Cakes -->
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/cakes-wall.jpg" alt="Delicious Cakes">
+                <div class="owl-carousel-inner">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-lg-8">
+                                <p class="text-primary text-uppercase fw-bold mb-2">// Scrumptious Cakes</p>
+                                <h1 class="display-1 text-light mb-4 animated slideInDown">Indulge in Our Rich Cakes
+                                </h1>
+                                <p class="text-light fs-5 mb-4 pb-3">At our bakery, we craft the finest cakes using
+                                    traditional techniques and the highest quality ingredients. Each cake is a
+                                    masterpiece, designed to delight your taste buds.</p>
+                                <a href="index.html#menu" class="btn btn-primary rounded-pill py-3 px-5">View Our Products</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third Slide: About Muffins -->
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/muffin-wall.jpg" alt="Freshly Baked Muffins">
+                <div class="owl-carousel-inner">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-lg-8">
+                                <p class="text-primary text-uppercase fw-bold mb-2">// Fresh Muffins</p>
+                                <h1 class="display-1 text-light mb-4 animated slideInDown">Freshly Baked Muffins, Just
+                                    for You</h1>
+                                <p class="text-light fs-5 mb-4 pb-3">Fluffy, warm, and perfectly sweet, our muffins come
+                                    in a variety of flavors, from classic blueberry to chocolate chip.</p>
+                                <a href="index.html#menu" class="btn btn-primary rounded-pill py-3 px-5">View Our Products</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fourth Slide: About Loaves -->
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-1.jpg" alt="Homemade Loaves">
+                <div class="owl-carousel-inner">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-lg-8">
+                                <p class="text-primary text-uppercase fw-bold mb-2">// Homemade Loaves</p>
+                                <h1 class="display-1 text-light mb-4 animated slideInDown">Taste the Warmth of Our
+                                    Loaves</h1>
+                                <p class="text-light fs-5 mb-4 pb-3">From hearty whole wheat to sweet cinnamon, our
+                                    loaves are baked to perfection, offering a fresh, comforting taste with every slice.
+                                </p>
+                                <a href="index.html#menu" class="btn btn-primary rounded-pill py-3 px-5">View Our Products</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- Facts / About Start -->
+    <section id="about">
+        <div class="container-xxl py-2">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="fact-item bg-light rounded text-center h-100 p-5">
+                            <i class="fa fa-certificate fa-4x text-primary mb-4"></i>
+                            <p class="mb-2">Years Experience</p>
+                            <h1 class="display-5 mb-0" id="yearsExperience">0</h1>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.3s">
+                        <div class="fact-item bg-light rounded text-center h-100 p-5">
+                            <i class="fa fa-box fa-4x text-primary mb-4"></i>
+                            <p class="mb-2">Total Products</p>
+                            <h1 class="display-5 mb-0" id="totalProducts">0</h1>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.7s">
+                        <div class="fact-item bg-light rounded text-center h-100 p-5">
+                            <i class="fa fa-cart-plus fa-4x text-primary mb-4"></i>
+                            <p class="mb-2">Order Everyday</p>
+                            <h1 class="display-5 mb-0" id="orderEveryday">0</h1>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.5s">
+                        <div class="fact-item bg-light rounded text-center h-100 p-5">
+                            <i class="fa fa-bread-slice fa-4x text-primary mb-4"></i>
+                            <p class="mb-2">Delivery Time</p>
+                            <h1 class="display-5 mb-0" id="Delivery">1 day</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-6">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="row img-twice position-relative h-100">
+                            <div class="col-6">
+                                <img class="img-fluid rounded" src="img/about-1.jpg" alt="Freshly Baked Goods">
+                            </div>
+                            <div class="col-6 align-self-end">
+                                <img class="img-fluid rounded" src="img/about-2.jpg" alt="Artisan Baking Process">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="h-100">
+                            <p class="text-primary text-uppercase mb-2">// About Us</p>
+                            <h1 class="display-6 mb-4">Baking with Passion, Serving with Love</h1>
+                            <p>We take pride in crafting each item with love and dedication. Our experienced bakers use
+                                only the finest ingredients, ensuring every bite is as delightful as the last. Whether
+                                it's a classic muffin or a decadent chocolate cake, we bake from the heart, making sure
+                                each product meets our high standards of quality.</p>
+                            <p>We believe in creating more than just delicious treats – we aim to bring joy to every
+                                customer, one bite at a time. Our commitment to freshness and quality ensures that you
+                                can taste the love in every bite.</p>
+                            <div class="row g-2 mb-4">
+                                <div class="col-sm-6">
+                                    <i class="fa fa-check text-primary me-2"></i>Fresh, Local Ingredients
+                                </div>
+                                <div class="col-sm-6">
+                                    <i class="fa fa-check text-primary me-2"></i>Custom Cakes & Pastries
+                                </div>
+                                <div class="col-sm-6">
+                                    <i class="fa fa-check text-primary me-2"></i>Online Ordering Available
+                                </div>
+                                <div class="col-sm-6">
+                                    <i class="fa fa-check text-primary me-2"></i>Fast & Reliable Delivery
+                                </div>
+                            </div>
+                            <a class="btn btn-primary rounded-pill py-3 px-5" href="#menu">Discover Our Menu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+    </section>
+    <!-- Facts / About End -->
+
+
+    <!-- Contact Start -->
+    <section id="contact">
+        <div class="container-xxl bg-light my-6 py-6 pt-0">
+            <div class="container">
+                <div class="bg-primary text-light rounded-bottom p-5 my-6 mt-0 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-6">
+                            <h1 class="display-4 text-light mb-0">The Best Bakery In Your City</h1>
+                        </div>
+                        <div class="col-lg-6 text-lg-end">
+                            <div class="d-inline-flex align-items-center text-start">
+                                <i class="fa fa-phone-alt fa-4x flex-shrink-0"></i>
+                                <div class="ms-4">
+                                    <p class="fs-5 fw-bold mb-0">Call Us</p>
+                                    <p class="fs-1 fw-bold mb-0" id="contact-section-phone">Loading...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Contact End -->
+                <!-- Product Start -->
+                <section id="menu">
+                    <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                        <p class="text-primary text-uppercase mb-2">// Bakery Products</p>
+                        <h1 class="display-6 mb-4">Explore The Categories Of Our Bakery Products</h1>
+                    </div>
+
+                    <div class="row g-4" id="categories-container"></div>
+                </section>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- Product End -->
+
+
+    <!-- Service Start -->
+    <section id="service">
+        <div class="container-xxl py-6">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <p class="text-primary text-uppercase mb-2">// Our Services</p>
+                        <h1 class="display-6 mb-4">What Do We Offer For You?</h1>
+                        <p class="mb-5">Indulge in our freshly baked goods crafted with love and the finest ingredients.
+                            Whether you're looking for a custom cake for a special occasion or freshly baked bread, we
+                            have something for everyone.</p>
+                        <div class="row gy-5 gx-4">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
+                                        <i class="fa fa-bread-slice text-white"></i>
+                                    </div>
+                                    <h5 class="mb-0">Freshly Baked Bread</h5>
+                                </div>
+                                <span>Enjoy our wide range of freshly baked breads, made with the finest ingredients and
+                                    baked to perfection daily. From soft rolls to crusty baguettes, we have it
+                                    all.</span>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
+                                        <i class="fa fa-birthday-cake text-white"></i>
+                                    </div>
+                                    <h5 class="mb-0">Custom Cakes</h5>
+                                </div>
+                                <span>Celebrate special moments with a custom cake designed just for you. Choose from a
+                                    variety of flavors, fillings, and designs to make your event even sweeter.</span>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
+                                        <i class="fa fa-cart-plus text-white"></i>
+                                    </div>
+                                    <h5 class="mb-0">Online Orders</h5>
+                                </div>
+                                <span>Order your favorite baked goods from the comfort of your home. Our online platform
+                                    lets you place orders for bread, cakes, and pastries with just a few clicks.</span>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
+                                        <i class="fa fa-truck text-white"></i>
+                                    </div>
+                                    <h5 class="mb-0">Home Delivery</h5>
+                                </div>
+                                <span>We deliver our freshly baked goods directly to your doorstep. Enjoy the
+                                    convenience of having warm, delicious bread and pastries without leaving your
+                                    home.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="row img-twice position-relative h-100">
+                            <div class="col-6">
+                                <img class="img-fluid rounded" src="img/service-1.jpg" alt="Freshly Baked Bread">
+                            </div>
+                            <div class="col-6 align-self-end">
+                                <img class="img-fluid rounded" src="img/service-2.jpg" alt="Custom Cakes">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Team Start -->
+
+    <style>
+        /* Add a box shadow to the team item container */
+        .team-item {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            /* Soft shadow */
+            border-radius: 10px;
+            /* Rounded corners for a clean look */
+            overflow: hidden;
+            /* Ensure the shadow doesn't overflow */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            /* Smooth hover effect */
+        }
+
+        /* Add hover effect for the team item */
+        .team-item:hover {
+            transform: translateY(-5px);
+            /* Slight lift on hover */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            /* Darker shadow on hover */
+        }
+    </style>
+    <div class="container-xxl py-6">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="text-primary text-uppercase mb-2">// Our Team</p>
+                <h1 class="display-6 mb-4">We're Super Professional At Our Skills</h1>
+            </div>
+            <div class="row g-4 justify-content-center" id="team-section">
+                <!-- Dynamic content will be injected here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <style>
+        /* WhatsApp Green Button */
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: white;
+            border-radius: 25px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            font-size: 18px;
+        }
+
+        /* WhatsApp Button Hover Effect */
+        .btn-whatsapp:hover {
+            background-color: #128C7E;
+            /* Darker green for hover */
+            transform: translateY(-2px);
+            /* Slight upward motion */
+        }
+
+        .btn-whatsapp i {
+            font-size: 20px;
+        }
+
+        /* Adjusting the spacing between the button text and the icon */
+        .btn-whatsapp:hover i {
+            color: #fff;
+            /* Ensures the icon remains white on hover */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .btn-whatsapp {
+                font-size: 16px;
+                /* Smaller font size on mobile */
+                padding: 10px 20px;
+                /* Adjust padding */
+            }
+
+            .btn-whatsapp i {
+                font-size: 18px;
+                /* Smaller icon on mobile */
+            }
+
+            .col-md-6 {
+                text-align: center;
+                /* Center-align text on mobile */
+                margin-bottom: 20px;
+                /* Add some space between the sections */
+            }
+
+            .col-md-6.text-md-end {
+                text-align: center;
+                /* Center-align button on mobile */
+                position: relative;
+                /* Ensure the button is positioned correctly */
+                margin-top: 15px;
+            }
+        }
+    </style>
+
+    <div class="container-xxl bg-light my-6 py-6 pb-0">
+        <div class="container">
+            <div class="text-center mx-auto mb-2 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="text-primary text-uppercase mb-2">// Client's Review</p>
+                <h1 class="display-6 mb-4">
+                    More Than <span id="customer-count">0</span> Customers Trusted Us
+                </h1>
+            </div>
+
+
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s" id="testimonial-section">
+                <!-- Dynamic testimonials will be injected here -->
+            </div>
+
+
+
+            <div class="bg-primary text-light rounded-top p-5 my-6 mb-0 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-6">
+                        <h1 class="display-4 text-light mb-0">Join Our WhatsApp Group</h1>
+                        <p class="text-light">Click below to join our WhatsApp group for the latest updates on new
+                            product launches and special offers!</p>
+                    </div>
+                    <div class="col-12 col-md-6 text-md-end">
+                        <div class="position-relative">
+                            <a href="" id="whatsapp-link"
+                                class="btn btn-whatsapp py-2 px-4 position-absolute top-0 end-0 mt-2 me-2"
+                                target="_blank">
+                                <i class="fab fa-whatsapp me-2"></i> Join Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer my-6 mb-0 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5 justify-content-center">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Bakery Address</h4>
+                    <p class="mb-2">
+                        <i class="fa fa-map-marker-alt me-3"></i><span class="office-address">Loading address...</span>
+                    </p>
+                    <p class="mb-2">
+                        <i class="fa fa-phone-alt me-3"></i><span class="office-phone">Loading phone...</span>
+                    </p>
+                    <p class="mb-2">
+                        <i class="fa fa-envelope me-3"></i><span class="office-email">Loading email...</span>
+                    </p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-light rounded-circle me-1 social-twitter" href=""><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-1 social-facebook" href=""><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-1 social-youtube" href=""><i
+                                class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-0 social-linkedin" href=""><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="index.html#about">About Us</a>
+                    <a class="btn btn-link" href="index.html#contact">Contact Us</a>
+                    <a class="btn btn-link" href="index.html#services">Our Services</a>
+                    <a href="Gallery.html" class="btn btn-link">Gallery</a>
+                </div>
+
+                <div class="col-lg-3 col-md-6" id="galleryLink">
+                    <h4 class="text-light mb-4">Photo Gallery</h4>
+                    <div class="row g-2 photo-gallery">
+                        <!-- Images will be dynamically loaded here -->
+                    </div>
+                </div>
+
+                <script>
+                    document.getElementById("galleryLink").addEventListener("click", function () {
+                        window.open("gallery.html", "_blank");  // Open in a new tab
+                    });
+                </script>
+
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright text-light py-4 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a href="#" id="website-name">Loading...</a> , All Right
+                    Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    Designed By <span id="developer-name">HTML Codex</span>
+                    <a href="" id="developer-linkedin" class="btn btn-link">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="index.js"></script>
+    <script src="data.js"></script>
+    <script src="testimonial.js"></script>
+    <style>
+        /* Floating Button Styles */
+        .floating-button {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            text-align: center;
+            z-index: 1000;
+            font-size: 14px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+        }
+        
+        .floating-button i {
+            font-size: 28px;
+            margin-bottom: 5px;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+        
+        .floating-button p {
+            font-size: 13px;
+            margin: 0;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+        
+        .floating-button:hover {
+            transform: translateY(-50%) scale(1.15);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(135deg, #0056b3, #003d7a);
+        }
+        
+        .floating-button:hover i {
+            transform: scale(1.2);
+            color: #d4e9ff;
+        }
+        
+        .floating-button:hover p {
+            color: #d4e9ff;
+        }
+        
+        /* Modal Content */
+        .modal-content {
+            position: relative;
+            background: transparent; /* Transparent to focus on the image */
+            padding: 0;
+            border: none;
+            max-width: 100%; /* Allow full width on smaller screens */
+            max-height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        
+        /* Modal Image */
+        .modal-image {
+            height: 100vh; /* Full viewport height */
+            width: auto; /* Maintain aspect ratio */
+            display: block;
+            margin: 0 auto;
+        }
+        
+        /* Close Button Attached to Image */
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            color: #fff;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 3000;
+            transition: background 0.3s ease;
+        }
+        
+        .close-button:hover {
+            background: rgba(0, 0, 0, 0.9);
+        }
+        
+        /* Menu Modal Background *//* Menu Modal Background */
+        .menu-modal {
+           
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7); /* Dimmed background */
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+        
+        /* Modal Content */
+        .modal-content {
+            width: max-content;
+           
+            position: relative;
+            display: inline-block;
+        }
+        
+        /* Close Button */
+        .close-button {
+            position: fixed;
+        
+            background: transparent;
+            border: none;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+        }
+        .close-button:hover {
+            
+            background-color: red;
+        }
+        /* Image */
+        .modal-image {
+            width: 100%;
+            height: auto;
+            max-width: 600px; /* Adjust as needed */
+        }
+        
+        /* Responsive Adjustments for Smaller Screens */
+        @media (max-width: 768px) {
+            .modal-image {
+                height: auto; /* Auto height for smaller screens */
+                width: 100%; /* Full width */
+            }
+        
+            .close-button {
+                top: 5px;
+                right: 5px;
+                width: 30px;
+                height: 30px;
+                font-size: 16px;
+            }
+        }
+        
+        
+        
+        
+            </style>
+        
+        <!-- Floating Button -->
+        <div class="floating-button" id="menuButton">
+            <p>Menu</p>
+        </div>
+        
+        <!-- Menu Modal -->
+        <div class="menu-modal" id="menuModal">
+            <div class="modal-content">
+                <button class="close-button" id="closeMenuModal">&times;</button>
+                <img src="img/profile/menu.jpg" alt="MENU" class="modal-image" />
+            </div>
+        </div>
+        
+        
+        
+        <script>
+            // Get references to elements
+        const menuButton = document.getElementById("menuButton");
+        const menuModal = document.getElementById("menuModal");
+        const closeMenuModal = document.getElementById("closeMenuModal");
+        
+        // Show modal when menu button is clicked
+        menuButton.addEventListener("click", () => {
+            menuModal.style.display = "flex"; // Show the modal
+        });
+        
+        // Close modal when the close button is clicked
+        closeMenuModal.addEventListener("click", () => {
+            menuModal.style.display = "none"; // Hide the modal
+        });
+        
+        // Close modal when clicking outside the image
+        menuModal.addEventListener("click", (e) => {
+            // Ensure the click is outside the modal-content and not on the image
+            if (e.target === menuModal) {
+                menuModal.style.display = "none"; // Hide the modal
+            }
+        });
+        
+        
+            </script>
+</body>
+
+</html>

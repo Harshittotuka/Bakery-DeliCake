@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Delicake</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body class="cakes">
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid top-bar bg-dark text-light px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row gx-0 align-items-center d-none d-lg-flex">
+            <div class="col-lg-6 px-5 text-start"></div>
+            <div class="col-lg-6 px-5 text-end">
+                <small>Follow us:</small>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn-lg-square text-primary border-end rounded-0 social-instagram" href="" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="btn-lg-square text-primary rounded-0 social-facebook" href="" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <!-- <a class="btn-lg-square text-primary pe-0 social-twitter" href="" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+            <h1 id="website-name2" class="text-primary m-0">Loading...</h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav mx-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="products-dropdown">Products</a>
+                    <div class="dropdown-menu m-0" id="products-menu">
+                        <!-- Categories will be populated here -->
+                    </div>
+                </div>
+                <a href="index.html#about" class="nav-item nav-link">About</a>
+                <a href="index.html#service" class="nav-item nav-link">Services</a>
+                
+                <a href="index.html#contact" class="nav-item nav-link">Contact</a>
+                <a href="Gallery.html" class="nav-item nav-link" target="_blank">Gallery</a>
+
+            </div>
+            <a href="tel:+01234567890" class="d-flex align-items-center text-decoration-none">
+                <div class="flex-shrink-0 btn-lg-square border border-light rounded-circle">
+                    <i class="fa fa-phone text-primary"></i>
+                </div>
+                <div class="ps-3">
+                    <small class="text-primary mb-0">Call Us</small>
+                    <p id="contact-phone" class="text-light fs-5 mb-0">Loading...</p>
+                </div>
+            </a>
+            <a href="#" class="d-flex align-items-center text-decoration-none" id="location-link" target="_blank">
+                <div class="flex-shrink-0 btn-lg-square border border-light rounded-circle">
+                    <i class="fa fa-map-marker-alt text-primary"></i>
+                </div>
+                <div class="ps-3">
+                    <small class="text-primary mb-0">Our Location</small>
+                    <p id="contact-location" class="text-light fs-5 mb-0">Loading...</p>
+                </div>
+            </a>
+
+            
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <div class="container-fluid page-header py-6 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center pt-5 pb-3">
+            <h1 class="display-4 text-white animated slideInDown mb-3 category-header"></h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item">
+                        <a class="text-white" href="#">Home</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a class="text-white" href="#">Products</a>
+                    </li>
+                    <li class="breadcrumb-item text-primary active" aria-current="page" id="category-name"></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="container-xxl bg-light my-6 py-6 pt-0" style="margin: 0rem 0">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px">
+                <p id="category-description" class="text-primary text-uppercase mb-2">
+                    Loading...
+                </p>
+                <h2 class="display-6 mb-4 category-header" id="category-title">
+                    Explore Our Categories
+                </h2>
+            </div>
+            <div class="row g-4" id="product-container">
+                <!-- Products will be injected here via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer my-6 mb-0 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5 justify-content-center">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Bakery Address</h4>
+                    <p class="mb-2">
+                        <i class="fa fa-map-marker-alt me-3"></i><span class="office-address">Loading address...</span>
+                    </p>
+                    <p class="mb-2">
+                        <i class="fa fa-phone-alt me-3"></i><span class="office-phone">Loading phone...</span>
+                    </p>
+                    <p class="mb-2">
+                        <i class="fa fa-envelope me-3"></i><span class="office-email">Loading email...</span>
+                    </p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-light rounded-circle me-1 social-twitter" href=""><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-1 social-facebook" href=""><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-1 social-youtube" href=""><i
+                                class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-0 social-linkedin" href=""><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="index.html#about">About Us</a>
+                    <a class="btn btn-link" href="index.html#contact">Contact Us</a>
+                    <a class="btn btn-link" href="index.html#services">Our Services</a>
+                    <a href="Gallery.html" class="btn btn-link">Gallery</a>
+                </div>
+
+                <div class="col-lg-3 col-md-6" id="galleryLink">
+                    <h4 class="text-light mb-4">Photo Gallery</h4>
+                    <div class="row g-2 photo-gallery">
+                        <!-- Images will be dynamically loaded here -->
+                    </div>
+                </div>
+                
+                <script>
+                    document.getElementById("galleryLink").addEventListener("click", function() {
+                        window.open("gallery.html", "_blank");  // Open in a new tab
+                    });
+                </script>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright text-light py-4 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a href="#" id="website-name">Loading...</a> , All Right
+                    Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    Designed By <span id="developer-name">HTML Codex</span>
+                    <a href="" id="developer-linkedin" class="btn btn-link">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="products.js"></script>
+    <script src="data.js"></script>
+    <!-- Custom JavaScript to load products -->
+
+
+    <style>
+/* Floating Button Styles */
+.floating-button {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    text-align: center;
+    z-index: 1000;
+    font-size: 14px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.floating-button i {
+    font-size: 28px;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.floating-button p {
+    font-size: 13px;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.floating-button:hover {
+    transform: translateY(-50%) scale(1.15);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #0056b3, #003d7a);
+}
+
+.floating-button:hover i {
+    transform: scale(1.2);
+    color: #d4e9ff;
+}
+
+.floating-button:hover p {
+    color: #d4e9ff;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background: transparent; /* Transparent to focus on the image */
+    padding: 0;
+    border: none;
+    max-width: 100%; /* Allow full width on smaller screens */
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Modal Image */
+.modal-image {
+    height: 100vh; /* Full viewport height */
+    width: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto;
+}
+
+/* Close Button Attached to Image */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3000;
+    transition: background 0.3s ease;
+}
+
+.close-button:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+/* Menu Modal Background *//* Menu Modal Background */
+.menu-modal {
+   
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Dimmed background */
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Modal Content */
+.modal-content {
+    width: max-content;
+   
+    position: relative;
+    display: inline-block;
+}
+
+/* Close Button */
+.close-button {
+    position: fixed;
+
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+.close-button:hover {
+    
+    background-color: red;
+}
+/* Image */
+.modal-image {
+    width: 100%;
+    height: auto;
+    max-width: 600px; /* Adjust as needed */
+}
+
+/* Responsive Adjustments for Smaller Screens */
+@media (max-width: 768px) {
+    .modal-image {
+        height: auto; /* Auto height for smaller screens */
+        width: 100%; /* Full width */
+    }
+
+    .close-button {
+        top: 5px;
+        right: 5px;
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+}
+
+
+
+
+    </style>
+
+<!-- Floating Button -->
+<div class="floating-button" id="menuButton">
+    <p>Menu</p>
+</div>
+
+<!-- Menu Modal -->
+<div class="menu-modal" id="menuModal">
+    <div class="modal-content">
+        <button class="close-button" id="closeMenuModal">&times;</button>
+        <img src="img/profile/menu.jpg" alt="MENU" class="modal-image" />
+    </div>
+</div>
+
+
+
+<script>
+    // Get references to elements
+const menuButton = document.getElementById("menuButton");
+const menuModal = document.getElementById("menuModal");
+const closeMenuModal = document.getElementById("closeMenuModal");
+
+// Show modal when menu button is clicked
+menuButton.addEventListener("click", () => {
+    menuModal.style.display = "flex"; // Show the modal
+});
+
+// Close modal when the close button is clicked
+closeMenuModal.addEventListener("click", () => {
+    menuModal.style.display = "none"; // Hide the modal
+});
+
+// Close modal when clicking outside the image
+menuModal.addEventListener("click", (e) => {
+    // Ensure the click is outside the modal-content and not on the image
+    if (e.target === menuModal) {
+        menuModal.style.display = "none"; // Hide the modal
+    }
+});
+
+
+    </script>
+
+</body>
+
+</html>

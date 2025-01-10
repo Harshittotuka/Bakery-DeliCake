@@ -1,0 +1,43 @@
+{
+  "website": {
+    "name": "DELICAKE",
+    "contact": {
+      "phone": "9829252637",
+      "whatsapp": "https://chat.whatsapp.com/KhBPMh0VzQhD3Tdy9k0xrM "
+    },
+    "Developer": {
+      "name": "Harshit Totuka",
+      "email": "",
+      "phone": "9829027413",
+      "linkedin": "https://www.linkedin.com/in/harshit-totuka/"
+    },
+    "Owner":{ 
+      "name": "Preeti Amit Mathur",
+      "phone": "9829252637",
+      "profile-img":"img/profile/owner1.jpg",
+      "instagram": "https://www.instagram.com/preeti.mathur.7798?igsh=ZnB5ZXU4YXh5aTdr",
+      "facebook": "https://www.facebook.com/share/19y8zA7z8y/",
+      "twitter": "https://www.twitter.com"
+    },
+    "start_date": "2022-01-01"  
+  },
+  "office": {
+    "maps_link": "https://maps.app.goo.gl/Kh2iBapC3RGLv6eZA",
+    "address": "1078b Rani sati nagar",
+    "phone": "9829252637",
+    "email": "info@example.com",
+    "social_links": {
+      "twitter": "https://twitter.com",
+      "facebook": "https://www.facebook.com/share/19y8zA7z8y/",
+      "youtube": "https://youtube.com",
+      "linkedin": "https://linkedin.com",
+      "instagram": "https://www.instagram.com/delicake__hh?igsh=MW85bDFkeGtucmJ5ZA=="
+    },
+    "images": [
+      "img/product-1.jpg",
+      "img/product-2.jpg",
+      "img/product-3.jpg"
+    ],
+    "order_everyday": 9357 
+  }
+}

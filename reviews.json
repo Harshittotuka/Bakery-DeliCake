@@ -1,0 +1,21 @@
+{     
+  "count": 40,
+  "reviews": [
+    {
+      "name": "Ravi Kumar",
+      "review": "The cakes from here are absolutely delicious! The flavors are rich, and the texture is perfect. Highly recommended!"
+    },
+    {
+      "name": "Priya Sharma",
+      "review": "I’ve tried their loaf, and it was just fantastic. Soft, fresh, and packed with flavor. Definitely my go-to bakery."
+    },
+    {
+      "name": "Arjun Patel",
+      "review": "The muffins are simply amazing! Fluffy, moist, and perfectly baked every time. Love them!"
+    },
+    {
+      "name": "Neha Reddy",
+      "review": "I had their chocolate cake for my birthday, and it was a hit! Rich, decadent, and a perfect treat for any occasion."
+    }
+  ]
+}
