@@ -1,0 +1,204 @@
+{
+    "categories": [
+        {
+            "categoryId": 1,
+            "categoryName": "Cakes",
+            "categoryDescription": "Our delicious range of cakes, perfect for any occasion, from birthdays to weddings.",
+            "categoryImage": "img/cake1.jpg",
+            "categoryProducts": [
+                {
+                    "id": 2,
+                    "name": "Classic Chocolate Cake",
+                    "description": "A rich and moist chocolate cake topped with creamy chocolate frosting. Perfect for chocolate lovers.",
+                    "price": 18,
+                    "images": [
+                        "img/cake1.jpg"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "name": "Vanilla Sponge Cake",
+                    "description": "Light and fluffy vanilla sponge cake with a smooth vanilla buttercream frosting.",
+                    "price": 15,
+                    "images": [
+                        "img/cake2.jpg"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "name": "Red Velvet Cake",
+                    "description": "A vibrant red cake with layers of cream cheese frosting and a soft, moist texture.",
+                    "price": 20,
+                    "images": [
+                        "img/cake3.jpg"
+                    ]
+                },
+                {
+                    "id": 5,
+                    "name": "Carrot Cake",
+                    "description": "Moist carrot cake with a hint of cinnamon, topped with rich cream cheese frosting.",
+                    "price": 17,
+                    "images": [
+                        "img/cake4.jpg"
+                    ]
+                }
+            ]
+        },
+        {
+            "categoryId": 2,
+            "categoryName": "Muffins",
+            "categoryDescription": "Freshly baked muffins in various flavors, perfect for breakfast or as a snack throughout the day.",
+            "categoryImage": "img/muffins1.jpg",
+            "categoryProducts": [
+                {
+                    "id": 1,
+                    "name": "Blueberry Muffin",
+                    "description": "Fluffy muffin packed with fresh blueberries, offering a burst of flavor in every bite.",
+                    "price": "2.99",
+                    "images": [
+                        "img/muffins1.jpg"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "name": "Chocolate Chip Muffin",
+                    "description": "A decadent muffin with chunks of rich chocolate chips in every bite.",
+                    "price": "3.50",
+                    "images": [
+                        "img/muffins2.jpg",
+                         "img/muffins1.jpg",
+                          "img/muffins3.jpg"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "name": "Banana Nut Muffin",
+                    "description": "Soft and moist muffin made with ripe bananas and crunchy walnuts.",
+                    "price": "3.25",
+                    "images": [
+                        "img/muffins3.jpg"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "name": "Apple Cinnamon Muffin",
+                    "description": "A delicious combination of apple chunks and cinnamon in a soft muffin.",
+                    "price": "3.00",
+                    "images": [
+                        "img/muffins4.jpg"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "name": "Chocolate Chip Muffin",
+                    "description": "A decadent muffin with chunks of rich chocolate chips in every bite.",
+                    "price": "3.50",
+                    "images": [
+                        "img/product-2.jpg",
+                         "img/product-2.jpg",
+                          "img/product-2.jpg"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "name": "Chocolate Chip Muffin",
+                    "description": "A decadent muffin with chunks of rich chocolate chips in every bite.",
+                    "price": "3.50",
+                    "images": [
+                        "img/muffins2.jpg",
+                         "img/muffins1.jpg",
+                          "img/muffins3.jpg"
+                    ]
+                }
+            ]
+        },
+        {
+            "categoryId": 3,
+            "categoryName": "Loaf",
+            "categoryDescription": "A variety of delicious loaves, perfect for breakfast or a hearty snack.",
+            "categoryImage": "img/loaf1.jpg",
+            "categoryProducts": [
+                {
+                    "id": 1,
+                    "name": "Banana Loaf",
+                    "description": "A moist loaf made with ripe bananas, perfect for breakfast or a sweet afternoon treat.",
+                    "price": 8,
+                    "images": [
+                        "img/loaf1.jpg"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "name": "Cinnamon Swirl Loaf",
+                    "description": "A delicious cinnamon-swirled loaf, offering a warm and spicy flavor.",
+                    "price": 7.5,
+                    "images": [
+                        "img/loaf2.jpg"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "name": "Pumpkin Loaf",
+                    "description": "A seasonal loaf made with fresh pumpkin and warm spices, perfect for fall.",
+                    "price": 9,
+                    "images": [
+                        "img/loaf3.jpg"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "name": "Lemon Poppy Seed Loaf",
+                    "description": "A light and refreshing loaf made with tangy lemon and crunchy poppy seeds.",
+                    "price": 8.5,
+                    "images": [
+                        "img/loaf4.jpg"
+                    ]
+                }
+            ]
+        },
+        {
+            "categoryId": 4,
+            "categoryName": "Cookies",
+            "categoryDescription": "Indulge in our crispy and soft cookies available in various flavors.",
+            "categoryImage": "img/cookie1.jpg",
+            "categoryProducts": [
+                {
+                    "id": 1,
+                    "name": "Chocolate Chip Cookies",
+                    "description": "Classic homemade chocolate chip cookies with a crispy edge and chewy center.",
+                    "price": 10,
+                    "images": [
+                        "img/cookie1.jpg"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "name": "Oatmeal Raisin Cookies",
+                    "description": "Healthy oatmeal cookies with plump raisins and a hint of cinnamon for a comforting treat.",
+                    "price": 7,
+                    "images": [
+                        "img/cookie2.jpg"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "name": "Peanut Butter Cookies",
+                    "description": "Rich and nutty cookies made with smooth peanut butter for a savory flavor.",
+                    "price": 8,
+                    "images": [
+                        "img/cookie3.jpg"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "name": "Sugar Cookies",
+                    "description": "Sweet and buttery sugar cookies with a delicate crunch, perfect for any occasion.",
+                    "price": 6,
+                    "images": [
+                        "img/cookie4.jpg"
+                    ]
+                }
+            ]
+        }
+    ]
+}
